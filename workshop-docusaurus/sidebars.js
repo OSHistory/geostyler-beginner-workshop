@@ -19,8 +19,48 @@ const sidebars = {
   // But you can create a sidebar manually
   tutorialSidebar: [
     'intro',
-    
+    'basics',
+    {
+      type: 'category',
+      label: 'First Steps',
+      items: [
+        'first-steps/overview',
+        'first-steps/create-react-app',
+        'first-steps/install-geostyler'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Style Parser',
+      items: [
+        'style-parser/overview',
+        'style-parser/parsing-sld',
+        'style-parser/parsing-openlayers',
+        'style-parser/converting-styles'
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Edit UI',
+      items: [
+        'edit-ui/overview',
+        'edit-ui/geostyler-component',
+        'edit-ui/preview',
+        'edit-ui/parser-to-ui'
+      ]
+    },
+    {
+      type: 'category',
+      label: 'Data Parser',
+      items: [
+        'data-parser/overview',
+        'data-parser/parse-wfs',
+        'data-parser/parser-to-ui'
+      ]
+    },
+    'summary',
+    'imprint'
   ],
 };
-
+  
 module.exports = sidebars;
